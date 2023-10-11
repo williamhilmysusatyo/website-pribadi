@@ -1,0 +1,114 @@
+/* Reset some default styles */
+
+/* Container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styles */
+.main-header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo-name {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.main-nav li {
+  margin-right: 20px;
+}
+
+.main-nav img {
+  width: 25px;
+  height: 25px;
+}
+
+/* Main content styles */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Article styles */
+.main-article {
+  flex-grow: 2;
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* Aside styles */
+.side-bar {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-bar img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s; /* Add a smooth transition for scaling */
+}
+
+.side-bar:hover img {
+  transform: scale(4); /* Enlarge the image by  hover */
+}
+
+/* Footer styles */
+.main-footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-bar {
+    display: none;
+  }
+}
